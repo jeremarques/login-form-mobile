@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>Login - camp.in</title>
+    </head>
+    <body>
+        <div id="logo">
+            <img src="./images/logo.svg" alt="logo da camp.in">
+        </div>
+        <div class="content_form">
+            <div id="title">
+                <h1><img src="./images/log-in.svg" alt="Imagem de lig in">Faça seu login</h1>
+                <p>Entre com suas informações de cadastro.</p>
+            </div>
+            <form action="">
+                <label for="email">E-mail</label>
+                <div id="user_email">
+                    <img src="./images/mail.svg" alt="ícone de email" id="icon_email">
+                    <input type="email" name="e-mail" id="email" placeholder="Digite seu e-mail" autofocus required>
+                </div>
+                <label for="password">Senha</label>
+                <div id="user_password">
+                    <img src="./images/lock.svg" alt="ícone de um cadeado" id="icon_password">
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+                    <img src="./images/eye.svg" alt="ícone de um olho" id="icon_eyes">
+                </div>
+                <div id="user_options">
+                    <div id="checkboxes">
+                        <input style="height: 18px; width: 18px; transform: translateY(4px);" type="checkbox" name="remenber-me" id="remember-me" checked>
+                        <label for="remember-me">Lembre-me</label>
+                    </div>
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+                <button type="submit">Entrar</button>
+                <p id="information">Não tem uma conta? <a href="#">Registre-se</a></p>
+            </form>
+        </div>
+    </body>
+</html>

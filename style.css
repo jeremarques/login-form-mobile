@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+body {
+    background-color: #191816;
+    width: 100%;
+    height: 100vh;
+}
+#logo {
+    display: hidden;
+    position: absolute;
+    top: 4.5%;
+    left: 6%;
+    animation: logo_init .6s ease;
+}
+@keyframes logo_init {
+    0% {
+        top: -39%;
+        opacity: 0%;
+    }
+    50% {
+        opacity: 30%;
+    }
+    100% {
+        display: block;
+        top: 4.5%;
+        opacity: 100%;
+    }
+}
+.content_form {
+    display: hidden;
+    position: relative;
+    top: 39%;
+    left: 40%;
+    transform: translate(-38%, -39%);
+    width: 90%;
+    height: 70%;
+    padding-right: 5px;
+    animation: init .6s ease;
+    pointer-events: fill;
+}
+@keyframes init {
+    0% {
+        top: -39%;
+        opacity: 0%;
+    }
+    50% {
+        opacity: 30%;
+    }
+    100% {
+        top: 39%;
+        opacity: 100%;
+        display: block;
+        pointer-events: all;
+    }
+}
+#title h1 {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    font-family: 'Poppins', sans-serif;
+    color: #d4ccb6;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+#title img {
+    height: 1.1em;
+}
+#title p {
+    font-size: .9em;
+    color: #afb6c2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-top: .5rem;
+    padding-bottom: 1.5rem;
+}
+label {
+    font-size: 1em;
+    font-weight: 500;
+    color: #afb6c2;
+    font-family: 'Poppins', sans-serif;
+}
+#user_email, #user_password {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    border: 1px solid #afb6c2;
+    border-radius: 4px;
+    height: 44px;
+    margin-top: 3.5px;
+}
+#user_email {
+    margin-bottom: 16px;
+}
+#user_email input, #user_password input {
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+#user_email img, #user_password img {
+    height: 21px;
+    margin-left: .7rem;
+}
+#icon_eyes {
+    padding-right: .7rem;
+}
+#user_email:focus-within,
+#user_password:focus-within {
+    border: 2px solid #ffc632;
+}
+#user_email:focus-within #icon_email {
+    content: url(./images/mail-focus.svg);
+}
+#user_password:focus-within #icon_password {
+    content: url(./images/lock-focus.svg);
+}
+#user_password:focus-within #icon_eyes {
+    content: url(./images/eyes-focus.svg);
+}
+a {
+    color: #ffc632;
+    text-decoration: none;
+}
+#user_options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+#user_options label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+#user_options a {
+    font-size: 14.5px;
+    font-weight: 500;
+    transform: translateY(1px);
+}
+button {
+    width: 100%;
+    height: 44px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffc632;
+    color: #473404;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    margin-top: 1rem;
+}
+button:hover {
+    background-color: #ffc660;
+    color: #765503;
+}
+#information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: #ffc632;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 1rem;
+}
+#information a {
+    font-weight: 500;
+}
